@@ -1,29 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- 340 ~ 460px -->
-    <title>Document</title>
+    <title>curriculo jean</title>
  </head>
+ <!-- tag do estilo css da pagina -->
+    <style>
+      /* comando para centralizar imagems de fundo e afins para não
+      ficar espaço branco na tela,nesse comando selecionamos todos os comandos do html */
+       *{
+        /* comandos para retirar a margem,borda e espaçamento interno(chamamos isso de:reset do 
+        codigo(estilo))*/
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }  
 
+      body{
+        /* estilo da letra */
+        /* é bom por familias de letras pois no pc dos usuarios pode não conter certas letras */
+        /*não é recomandado usar sans-serif  */
+        font font-family:sans-serif;
+      }
+
+       header{
+         /* comando que muda cor do fundo */
+        background-color: #ed0e0e;
+        /* comando para posicionar imagens */
+        background:url(./img/img_de_computador.jpg.jpg);
+        /* comando para centralizar(ou outra opçao) a imagem */
+        background-position: center;
+        /* comando para sempre tentar encaixar o fundo rente a esquerda */
+        background-size: cover;
+        /* muda a cor das letras */
+        color: rgba(238, 15, 15, 0.933);
+        /* comando que controla a quantidade de pontos do fundo ou img de fundo */
+        padding: 30px;
+        text-align: center;
+        
+        
+      }
+      header h1{
+        color:rgba(217, 9, 214, 0.933);
+        background-color;
+        
+        
+      }
+      
+      header p{
+        color: blue;
+      }
+
+      /* 
+      header div{
+        display:inline-block;
+        width:40% ;
+      } */
+
+      /* header>div>img{
+        width: 100%;
+      } */
+      
+      #logo{width: 30%;
+      /* 
+      comando para ativar flutuação
+      */
+      float:left
+      }
+
+      #logo img{ 
+        /* comando para arredondar foto */
+        border-radius: 50%;
+      }
+      
+      #dados{
+        width: 60%;
+        float: left;
+      }
+          /* 
+          vai tarbalhar na area que tem flutuaçao como tabela.vai acabar com a flutuação na area
+          vai adicionar um conteudo e vai acabar  ou tenta ajustar o conteudo dentro da janela
+          header{
+            display: inline-table;
+        float: none;
+        content: "";
+        overflow: auto;
+          OU
+        o comando a baixo(este é uma classe)}
+          
+          */
+      .row {
+        display: inline-table;
+        float: none;
+        content: "";
+        overflow: auto;
+      }
+      
+      nav{
+        background-color: black;
+       
+      }
+
+      nav a{
+        /* comando para botar um do laado do outro */
+         display:inline-block;
+         /* 1º valor:eixo y| 2ºvalor:eixo X-- */
+         padding:10px 20px;
+         color: azure;
+         /* 
+         para tirar a linha de baixo da letra ou palavra */
+          text-decoration: none;
+        }
+         /* 
+         é um dos pseudos elementos.este fala de passar sobre o elemento
+         quando é colocado este item(hover)dignifica que o efeito sera acionado
+         somente quando passar por cima do item
+         */
+        nav a:hover{
+          background-color:blue ;
+          color:#ed0e0e;
+
+        }
+
+      #projetos{
+        color: aquamarine;
+        background-color: #ed0e0e;
+      }
+
+      #empresas_ou_tecnologias{
+
+
+      }
+      
+
+      
+    </style>
 
   <body>
-    <header>
-    
+    <header class="row">
+     <!-- para mecher em 1 área especifica:
+        (nao pode ter espaço nem acentuaçao)
+        (nao pode repetir nome de id)
+        o ideal é criar marcaçoes:essas marcaçoes podem ser definidas na forma de ID(area especifica) ou CLASSES
+       -->
+      <div id="logo">       
+              <img src="img/foto_de_perfil_terno.jpg" height="80" alt="foto do usuario">
 
-              <h1>nome completo</h1>
-              <p>programador web</p>
-              <p>Rio de Janeiro<br>Brasil</p>
-              <img src="img/icons8-facebook-messenger-128.png" alt="logo menssenger facebook para clicar e entar em contato">
-              <img src="img/icons8-linkedin-circundado-128.png" alt="logo linkedin para clicar e entrar em contato">
-              <img src="img/icons8-whatsapp-128.png" alt="logo whatzapp para clicar e entrar em contato">
-              <img src="img/icons8-github-128.png" alt="logo github para clicar e ver projetos e entrar em contato" height="50">
+      </div>
+       <div id="dados">
+          
 
+            
+            <h1>Jean L</h1>
+            <p>programador web</p>
+            <p>Rio de Janeiro<br>Brasil</p>
+            <img src="img/icons8-facebook-messenger-128.png" alt="logo menssenger facebook para clicar e entar em contato" height="50">
+            <img src="img/icons8-linkedin-circundado-128.png" alt="logo linkedin para clicar e entrar em contato" height="50">
+            <img src="img/icons8-whatsapp-128.png" alt="logo whatzapp para clicar e entrar em contato" height="50">
+            <img src="img/icons8-github-128.png" alt="logo github para clicar e ver projetos e entrar em contato" height="50">       
+         
+      </div>
     </header>       
       <nav>
-
+         
+         <!-- tag <a>:para atalho ao clicar -->
+        <!-- atributo href="" da o destino do atalho -->
+        
+        
+        <a href="index.html">inicio</a>
+        <a href="#projetos">projetos</a>
+        <a href="#empresas_ou_tecnologias">empresas ou tecnologias</a>
+         
       </nav>
       
 
@@ -34,13 +184,18 @@
 
 
         
-       <section>
-
+       <section id="projetos">
+        <h1>Projetos</h1>
+        <p>piriripororo</p>
 
        </section>
 
+       <section id="empresas_ou_tecnologias">
+        <h1>empresas ou tecnologias</h1>
+         <p>aaaaaaaaaaaa</p>
 
-       <section>
+        
+        </section>>
 
 
 
@@ -54,4 +209,5 @@
 
       
   </body>
-</html>
+</html> 
+
